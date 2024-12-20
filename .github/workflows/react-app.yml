@@ -32,7 +32,3 @@ jobs:
       # Run tests
       - name: Run Tests
         run: npm test
-
-      # Optional: Clean up
-      - name: Clean up
-        run: npm run clean
