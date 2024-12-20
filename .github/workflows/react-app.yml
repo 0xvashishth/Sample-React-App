@@ -33,14 +33,6 @@ jobs:
       - name: Run Tests
         run: npm test
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        if: success()  # Only deploy if tests pass
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # Deploy to the gh-pages branch
-          folder: build # Build folder containing the built React app
-
       # Optional: Clean up
       - name: Clean up
         run: npm run clean
